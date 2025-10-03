@@ -20,5 +20,6 @@ public static void main(String[] args) {
 	System.out.println(instance1.hashCode());
 	System.out.println(instance2.hashCode());
 	System.out.println(instance3.hashCode());
+	// we can break singleton behaviour by using serialization, multithrread,reflection,clone
 }
 }

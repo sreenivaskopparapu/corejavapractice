@@ -21,7 +21,7 @@ class SingleTonDemoOne implements Serializable{
 		return instance;
 	}
 	
-	Object readResolve() {
+	protected Object readResolve() {
 		return instance;
 	}
 }
