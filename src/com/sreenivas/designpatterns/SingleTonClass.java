@@ -2,7 +2,9 @@ package com.sreenivas.designpatterns;
 
 class SingleTonDemo{
 	private static SingleTonDemo instance=null;
-	
+	//	private static  SingleTonDemo instance=new SingleTonDemo(); Eagar loading during compile time the object is created
+    //class loaders three types bootstrap, system,extension cl 
+	//after .class the work is  load , link,intialize, cl is load the class later linked to defalut values, once it intialize overloaded to original values 
 	private SingleTonDemo() {
 	}
 	public static SingleTonDemo getInstance() {
